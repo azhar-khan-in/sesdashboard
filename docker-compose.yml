@@ -9,6 +9,7 @@ services:
       env_file:
         - ./.env.local
       image: mysql:8.0
+      platform: linux/x86_64
       container_name: sesdashboard-mysql
       working_dir: /application
       volumes:
